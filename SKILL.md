@@ -51,7 +51,69 @@ When user requests a literature review:
 3. Analysis (critical evaluation)
 4. Transition to next paragraph
 
-## Zotero Integration
+## Literature Sources
+
+### ArXiv MCP (Preprints & Latest Research)
+
+GitHub: https://github.com/blazickjp/arxiv-mcp-server
+
+**Available Tools:**
+- `search_papers` - Search by keywords with date range and category filters
+- `download_paper` - Download paper by arXiv ID
+- `list_papers` - List all downloaded papers
+- `read_paper` - Read downloaded paper content
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "arxiv": {
+      "command": "uvx",
+      "args": ["arxiv-mcp-server"],
+      "env": {
+        "ARXIV_STORAGE_PATH": "~/.arxiv-mcp-server/papers"
+      }
+    }
+  }
+}
+```
+
+**Usage Example:**
+```
+Search: "medical image segmentation transformer"
+Categories: cs.CV, eess.IV
+Date range: 2023-01-01 to present
+Max results: 50
+```
+
+### PubMed MCP (Biomedical Literature)
+
+GitHub: https://github.com/grll/pubmedmcp
+
+Access 35+ million biomedical literature citations.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pubmedmcp": {
+      "command": "uvx",
+      "args": ["pubmedmcp@latest"],
+      "env": {
+        "UV_PRERELEASE": "allow",
+        "UV_PYTHON": "3.12"
+      }
+    }
+  }
+}
+```
+
+**Search Tips:**
+- Use MeSH terms for precise medical searches
+- Combine with publication type filters (Review, Clinical Trial)
+- Filter by date for recent literature
+
+### Zotero Integration (Reference Management)
 
 Access local Zotero database (Requires the user to provide their user ID.):
 ```bash
@@ -65,6 +127,14 @@ curl -s "http://localhost:23119/api/users/[USER_ID]/collections/[KEY]/items"
 Alternatively, Zotero-MCP can be used, but it requires users to perform manual configuration in advance.
 
 Extract: title, abstractNote, date, creators, publicationTitle, DOI
+
+### Source Selection Guide
+
+| Source | Best For | Strengths |
+|--------|----------|-----------|
+| **ArXiv** | Latest methods, deep learning advances | Preprints, fast access, CS/AI focus |
+| **PubMed** | Clinical validation, medical context | Peer-reviewed, MeSH indexing, clinical |
+| **Zotero** | Organized collections, existing library | Local management, annotations, PDFs |
 
 ## Standard Review Structure
 

@@ -15,6 +15,23 @@
 
 ## Reference Sources
 
+### ArXiv MCP (Latest Methods)
+```
+Search queries:
+- "[topic] segmentation transformer" (cs.CV, eess.IV)
+- "[topic] deep learning" (cs.LG)
+Date range: 2022-present
+Downloaded papers: [list paper IDs]
+```
+
+### PubMed MCP (Clinical Literature)
+```
+MeSH queries:
+- "Deep Learning"[MeSH] AND "[domain]"[MeSH]
+- "[method]"[MeSH] AND "diagnosis"[MeSH]
+Filters: Review, Clinical Study
+```
+
 ### Zotero Database
 ```
 API: http://localhost:23119/api/users/[USER_ID]/
@@ -75,10 +92,24 @@ Collections:
 **Goal**: Gather comprehensive corpus
 **Status**: Not Started
 
-- [ ] Search PubMed for [keywords]
+### ArXiv MCP (Deep Learning Methods)
+- [ ] Search "[topic] segmentation" in cs.CV, eess.IV
+- [ ] Search "[topic] transformer/attention" in cs.CV
+- [ ] Download key papers (target: 50-100)
+- [ ] Extract method details from downloaded papers
+
+### PubMed MCP (Clinical Literature)
+- [ ] Search MeSH: "Deep Learning" AND "[domain]"
+- [ ] Filter by publication type (Review, Clinical Study)
+- [ ] Collect clinical validation studies (target: 30-50)
+
+### Additional Sources
 - [ ] Search IEEE Xplore for [keywords]
 - [ ] Search Google Scholar for [keywords]
-- [ ] Export to Zotero
+- [ ] Check Zotero existing collections
+
+### Organization
+- [ ] Export all to Zotero
 - [ ] Categorize by method/application
 - [ ] Gap analysis
 
@@ -143,12 +174,14 @@ Collections:
 | 3.1 | [Paper A], [Paper B] |
 | 3.2 | [Paper C], [Paper D] |
 
-## Zotero Collections
+## Literature Sources Summary
 
-| Collection | Key | Items |
-|------------|-----|-------|
-| [Name 1] | [KEY] | N |
-| [Name 2] | [KEY] | N |
+| Source | Query/Collection | Papers | Status |
+|--------|------------------|--------|--------|
+| ArXiv | [query 1] | N | [ ] |
+| ArXiv | [query 2] | N | [ ] |
+| PubMed | [MeSH query] | N | [ ] |
+| Zotero | [collection name] | N | [ ] |
 ```
 
 ---

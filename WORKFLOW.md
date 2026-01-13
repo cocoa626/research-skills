@@ -18,19 +18,72 @@ project_root/
 
 ## Phase 2: Literature Collection
 
+### Data Sources
+
+#### 1. ArXiv MCP (Latest Deep Learning Methods)
+
+Best for: Cutting-edge architectures, preprints, AI/ML advances
+
+**Search Strategy:**
+```
+Query: "[topic] AND (segmentation OR detection OR classification)"
+Categories: cs.CV, eess.IV, cs.LG
+Date: Last 2-3 years for recent methods
+Max results: 50-100 per query
+```
+
+**Workflow:**
+1. Use `search_papers` with topic keywords
+2. Review titles and abstracts for relevance
+3. Use `download_paper` for key papers
+4. Use `read_paper` to extract method details
+
+**Example Queries:**
+- "medical image segmentation transformer"
+- "coronary artery deep learning"
+- "CT scan neural network"
+
+#### 2. PubMed MCP (Clinical & Biomedical Literature)
+
+Best for: Clinical validation, medical context, peer-reviewed studies
+
+**Search Strategy:**
+- Use MeSH terms for precise results
+- Filter by publication type (Review, Clinical Study)
+- Focus on clinical outcomes and validation
+
+**Example MeSH Queries:**
+- "Deep Learning"[MeSH] AND "Coronary Vessels"[MeSH]
+- "Image Processing, Computer-Assisted"[MeSH] AND "Tomography, X-Ray Computed"[MeSH]
+
+#### 3. Zotero (Existing Library & Organization)
+
+Best for: Managing collected references, existing collections
+
+**Workflow:**
+1. Connect to Zotero API or use Zotero-MCP
+2. Browse existing collections by topic
+3. Export metadata for citation management
+
+### Collection Workflow
+
 **Actions:**
-1. Connect to Zotero API (if available)
-2. Search academic databases (PubMed, IEEE, Springer)
-3. Categorize papers by method/application
-4. Create literature matrix:
+1. **ArXiv search** - Latest methods and architectures (50-100 papers)
+2. **PubMed search** - Clinical validation studies (30-50 papers)
+3. **Zotero check** - Existing relevant collections
+4. **WebSearch** - Supplementary sources (IEEE, Springer, Google Scholar)
+5. **Categorize** papers by method/application
+6. Create literature matrix:
 
-| Category | Subcategory | Key Papers | Count |
-|----------|-------------|------------|-------|
-| Methods  | CNN/U-Net   | [refs]     | N     |
-| Methods  | Transformer | [refs]     | N     |
-| Clinical | Validation  | [refs]     | N     |
+| Category | Subcategory | Key Papers | Count | Source |
+|----------|-------------|------------|-------|--------|
+| Methods  | CNN/U-Net   | [refs]     | N     | ArXiv  |
+| Methods  | Transformer | [refs]     | N     | ArXiv  |
+| Clinical | Validation  | [refs]     | N     | PubMed |
+| Datasets | Public      | [refs]     | N     | Mixed  |
 
-5. Identify gaps requiring more literature
+7. **Gap analysis** - Identify missing topics or time periods
+8. **Targeted search** - Fill gaps with additional queries
 
 ## Phase 3: Outline Development
 
