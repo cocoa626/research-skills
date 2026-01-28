@@ -8,6 +8,7 @@ A collection of Claude Code skills for academic research workflows.
 |-------|-------------|---------|
 | [medical-imaging-review](./medical-imaging-review/) | Write comprehensive literature reviews for medical imaging AI | `/medical-imaging-review`, "review paper", "survey", "综述" |
 | [paper-slide-deck](./paper-slide-deck/) | Generate professional slides from academic papers with auto figure extraction | `/paper-slide-deck paper.pdf` |
+| [research-proposal](./research-proposal/) | Generate PhD research proposals with Nature Reviews-style academic writing | `/research-proposal`, "research proposal", "PhD proposal", "研究计划" |
 
 ## Installation
 
@@ -19,6 +20,9 @@ cp -r medical-imaging-review ~/.claude/skills/
 
 # For paper-slide-deck
 cp -r paper-slide-deck ~/.claude/skills/
+
+# For research-proposal
+cp -r research-proposal ~/.claude/skills/
 ```
 
 Or copy to project-local skills:
@@ -26,6 +30,7 @@ Or copy to project-local skills:
 ```bash
 cp -r medical-imaging-review .agents/skills/
 cp -r paper-slide-deck .agents/skills/
+cp -r research-proposal .agents/skills/
 ```
 
 ---
@@ -100,6 +105,48 @@ Transform academic papers into professional slide decks with automatic figure ex
 | `apply-template.ts` | Academic figure container template |
 | `merge-to-pptx.ts` | PPTX generation |
 | `merge-to-pdf.ts` | PDF generation |
+
+---
+
+## Research Proposal Skill
+
+Generate high-quality academic research proposals for PhD applications following Nature Reviews-style academic writing conventions.
+
+### Features
+
+- **Structured 5-phase workflow**: Requirements → Literature → Outline → Content → Output
+- **Multi-source literature integration**: WebSearch, Zotero MCP, arXiv, PubMed
+- **Bilingual support**: English and Chinese (中文)
+- **Domain adaptation**: STEM, Humanities, Social Sciences
+- **Academic writing style**: Prose-based with hedging language, minimum 40 references
+
+### Workflow
+
+1. Gather requirements (topic, domain, language, word count)
+2. Collect literature from multiple sources
+3. Generate outline for user approval
+4. Write full proposal based on approved outline
+5. Output Markdown with quality checklist
+
+### Files
+
+| Path | Description |
+|------|-------------|
+| `SKILL.md` | Main skill definition and 5-phase workflow |
+| `references/STRUCTURE_GUIDE.md` | Section-by-section writing guide |
+| `references/DOMAIN_TEMPLATES.md` | STEM vs Humanities differences |
+| `references/WRITING_STYLE_GUIDE.md` | Nature Reviews academic writing style |
+| `references/QUALITY_CHECKLIST.md` | Quality verification checklist |
+| `references/LITERATURE_WORKFLOW.md` | Literature collection workflow |
+| `assets/proposal_scaffold_en.md` | English template scaffold |
+| `assets/proposal_scaffold_zh.md` | Chinese template scaffold |
+
+### Output
+
+- Target: 2,000-4,000 words (default ~3,000)
+- Minimum 40 references
+- 3-5 figure suggestions
+- Markdown format (convertible to DOCX/PDF via pandoc)
 
 ---
 
