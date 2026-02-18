@@ -1,171 +1,135 @@
-# Domain-Specific Method Categories
+# Domain Structure: Hypothesis-Driven Framework
 
-## Coronary Artery Analysis (CCTA)
-
-### Segmentation Methods
-1. General CNN/U-Net
-2. Vision Transformer
-3. Topology-aware (clDice, VCP Loss)
-4. Multi-task Learning
-5. Semi-supervised
-6. Graph Neural Networks
-7. Diffusion Models
-8. Mamba/State Space Models
-9. Foundation Models (SAM, vesselFM)
-10. Physics-Informed Neural Networks
-
-### Downstream Tasks
-- Centerline extraction
-- Vessel labeling (AHA 17-segment)
-- Stenosis detection
-- CT-FFR computation
-- Plaque analysis
-- Calcium scoring
-- Pericoronary fat analysis (FAI)
-
-### Key Datasets
-- CAT08 (32 cases, centerline)
-- ASOCA (40 cases, segmentation)
-- ImageCAS (1000 cases, segmentation)
-- PCCTA120 (120 cases, artery + plaque)
+This file organizes the literature review around four core hypotheses
+on legislative decentralization, institutional differences, and market integration.
 
 ---
 
-## Lung Imaging (CT/X-ray)
+## H1. Cost Effect: Legislative Power and Firm Operating Costs
 
-### Detection Methods
-1. Anchor-based (Faster R-CNN, RetinaNet)
-2. Anchor-free (CenterNet, FCOS)
-3. Transformer-based (DETR variants)
-4. 3D Detection Networks
-5. Multi-scale Feature Pyramids
+### Concept
+Legislative decentralization increases institutional heterogeneity,
+raising compliance, information, and coordination costs for firms operating across regions.
 
-### Segmentation Methods
-1. U-Net variants
-2. Attention mechanisms
-3. Boundary-aware methods
-4. Uncertainty quantification
+### Theoretical Logic
+Legislative decentralization  
+→ Regulatory differences expand  
+→ Firms face higher compliance and information costs  
+→ Cross-regional investment becomes less attractive
 
-### Tasks
-- Nodule detection
-- Nodule segmentation
-- Malignancy classification
-- COVID-19 detection
-- Interstitial lung disease
+### Literature Streams
+- Transaction cost economics (Coase; Williamson)
+- Institutional distance and firm strategy
+- Regulatory heterogeneity and entry barriers
+- Interregional trade costs within countries
 
-### Key Datasets
-- LUNA16 (888 CT scans)
-- LIDC-IDRI (1018 cases)
-- ChestX-ray14 (112,120 X-rays)
-- COVID-CT (349 CT scans)
+### Common Measures
+- Operating cost ratio
+- Administrative and compliance expenses
+- Time required for approvals
+- Multi-region management costs
 
----
-
-## Brain Imaging (MRI/CT)
-
-### Segmentation Methods
-1. Multi-atlas methods
-2. CNN-based (U-Net, V-Net)
-3. Attention mechanisms
-4. Graph neural networks
-5. Self-supervised pre-training
-
-### Tasks
-- Brain tissue segmentation
-- Tumor segmentation (BraTS)
-- Lesion detection (stroke, MS)
-- Vessel segmentation
-- Age estimation
-
-### Key Datasets
-- BraTS (brain tumor)
-- ADNI (Alzheimer's)
-- IXI (healthy brains)
-- ISLES (stroke lesions)
+### Expected Outcome
+Firms experience higher operating costs after local legislative power expands.
 
 ---
 
-## Cardiac Imaging (MRI/CT/Echo)
+## H2. Judicial Protection Effect: Local Bias in Legal Enforcement
 
-### Segmentation Methods
-1. Temporal modeling (RNN, 3D CNN)
-2. Shape priors
-3. Multi-view fusion
-4. Uncertainty estimation
+### Concept
+Expanded local legislative authority may increase the influence of local rules
+in judicial decisions, potentially leading to local protectionism.
 
-### Tasks
-- Chamber segmentation
-- Wall motion analysis
-- Scar/fibrosis detection
-- Valve assessment
-- Strain analysis
+### Theoretical Logic
+Local legislative authority expands  
+→ Local regulations gain legal weight  
+→ Courts align with local governance incentives  
+→ Local firms gain litigation advantages
 
-### Key Datasets
-- ACDC (100 patients)
-- M&Ms (320 subjects)
-- CAMUS (500 patients, echo)
+### Literature Streams
+- Judicial local protectionism in China
+- Home-court advantage in legal decisions
+- Law and economics of enforcement
+- Political economy of courts
 
----
+### Common Measures
+- Local vs non-local win rates
+- Case outcomes by firm origin
+- Enforcement disparities across regions
 
-## Pathology (Whole Slide Images)
-
-### Methods
-1. Patch-based CNN
-2. Multiple Instance Learning
-3. Attention-based aggregation
-4. Graph neural networks
-5. Foundation models (PathLM)
-
-### Tasks
-- Cancer detection
-- Grading/staging
-- Biomarker prediction
-- Survival prediction
-
-### Key Datasets
-- CAMELYON (lymph node)
-- TCGA (multi-cancer)
-- PANDA (prostate)
+### Expected Outcome
+Local firms experience higher win rates in litigation.
 
 ---
 
-## Retinal Imaging (Fundus/OCT)
+## H3. Regulatory Risk Effect: Enforcement Intensity and Legal Exposure
 
-### Methods
-1. Multi-scale networks
-2. Attention mechanisms
-3. Domain adaptation
-4. Federated learning
+### Concept
+Stronger legislative authority may increase enforcement intensity
+and legal clarity, raising litigation and administrative penalty risks.
 
-### Tasks
-- Diabetic retinopathy grading
-- Glaucoma detection
-- Age-related macular degeneration
-- Vessel segmentation
+### Theoretical Logic
+Legislative authority strengthens regulatory tools  
+→ More inspections and clearer penalties  
+→ Higher probability of lawsuits and sanctions  
+→ Increased operational risk for firms
 
-### Key Datasets
-- EyePACS (88,702 images)
-- DRIVE (40 images, vessels)
-- REFUGE (1200 images, glaucoma)
+### Literature Streams
+- Regulation and enforcement theory
+- Deterrence and compliance economics
+- Administrative penalties and firm behavior
+- Government incentives and enforcement intensity
+
+### Common Measures
+- Number of lawsuits and arbitration cases
+- Administrative penalties and fines
+- Inspection frequency
+- Compliance violations
+
+### Expected Outcome
+Firms face increased litigation and administrative penalties.
 
 ---
 
-## General Medical Image Segmentation
+## H4. Market Segmentation Effect: Reduced Cross-Regional Investment
 
-### Universal Method Categories
-1. **Encoder-Decoder** (U-Net, V-Net, nnU-Net)
-2. **Attention Mechanisms** (SE, CBAM, Transformers)
-3. **Multi-scale Processing** (FPN, PSP, ASPP)
-4. **Boundary-aware** (Active contours, edge losses)
-5. **Topology-preserving** (clDice, persistent homology)
-6. **Uncertainty Quantification** (MC Dropout, ensembles)
-7. **Domain Adaptation** (adversarial, self-training)
-8. **Few-shot/Zero-shot** (prototypical, foundation models)
-9. **Self-supervised Pre-training** (contrastive, masked)
-10. **Efficient Architectures** (MobileNet, EfficientNet, Mamba)
+### Concept
+Combined effects of higher costs, judicial local protection,
+and regulatory risks reduce cross-regional capital flows,
+leading to market segmentation.
 
-### Universal Evaluation Metrics
-- **Overlap**: Dice, IoU/Jaccard
-- **Distance**: Hausdorff (HD, HD95), ASSD
-- **Topology**: clDice, Betti numbers
-- **Clinical**: Sensitivity, Specificity, AUC
+### Theoretical Logic
+Costs ↑ + Local protection ↑ + Regulatory risk ↑  
+→ Cross-regional investment declines  
+→ Capital mobility decreases  
+→ Market integration weakens
+
+### Literature Streams
+- Market integration and segmentation
+- Local protectionism and domestic trade barriers
+- Capital mobility and regional fragmentation
+- Unified market development
+
+### Common Measures
+- Cross-regional subsidiary establishment
+- Interregional investment flows
+- Cross-region M&A activity
+- Industrial spatial concentration
+
+### Expected Outcome
+Cross-regional investment declines and market segmentation intensifies.
+
+---
+
+## Optional Section: Moderating Factors
+
+### Regional Heterogeneity
+- Marketization level
+- Fiscal pressure
+- Legal environment quality
+
+### Firm Heterogeneity
+- Ownership (SOE vs private)
+- Firm size
+- Political connections
+
