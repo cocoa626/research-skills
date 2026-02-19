@@ -1,10 +1,33 @@
 # MCP Server Configuration for Literature Collection
+## (ArXiv + Zotero Only)
 
-## ArXiv MCP (Preprints & Latest Research)
+This configuration supports literature collection for research in:
+
+- Institutional economics  
+- Law and economics  
+- Political economy  
+- Legislative decentralization  
+- Judicial protection & local protectionism  
+- Market integration and segmentation  
+- Regulatory governance and firm behavior  
+
+This setup removes biomedical sources and focuses on social science research.
+
+---
+
+# 1. ArXiv MCP (Working Papers & Latest Research)
 
 **Repository:** https://github.com/blazickjp/arxiv-mcp-server
 
-### Configuration
+ArXiv is useful for accessing:
+- Latest working papers
+- Emerging empirical methods
+- Policy and governance research
+- Quantitative social science
+
+---
+
+## 1.1 Configuration
 
 ```json
 {
@@ -20,103 +43,181 @@
 }
 ```
 
-### Available Tools
+---
+
+## 1.2 Available Tools
 
 | Tool | Purpose |
 |------|---------|
-| `search_papers` | Search by keywords with date range and category filters |
+| `search_papers` | Search working papers by keywords |
 | `download_paper` | Download paper by arXiv ID |
-| `list_papers` | List all downloaded papers |
-| `read_paper` | Read downloaded paper content |
+| `list_papers` | List downloaded papers |
+| `read_paper` | Read paper content |
 
-### Search Strategy
+---
+
+## 1.3 Recommended Search Strategy (Social Sciences)
+
+Use institutional and governance-related keywords.
+
+### Core Query Pattern
 
 ```
-Query: "[topic] AND (segmentation OR detection OR classification)"
-Categories: cs.CV, eess.IV, cs.LG
-Date: Last 2-3 years for recent methods
-Max results: 50-100 per query
+"[topic]" AND (institution* OR regulation OR decentralization OR governance)
 ```
 
 ### Example Queries
 
-- `"medical image segmentation transformer"` (cs.CV, eess.IV)
-- `"coronary artery deep learning"` (cs.CV)
-- `"CT scan neural network"` (eess.IV)
+- `"fiscal decentralization China"`
+- `"local protectionism domestic trade"`
+- `"judicial independence economic outcomes"`
+- `"market integration regional fragmentation"`
+- `"regulatory enforcement firm behavior"`
+- `"institutional distance firm investment"`
+- `"government incentives regulation enforcement"`
 
 ---
 
-## PubMed MCP (Biomedical Literature)
+## 1.4 Suggested ArXiv Categories
 
-**Repository:** https://github.com/grll/pubmedmcp
+| Category | Relevance |
+|----------|----------|
+| econ.GN | General economics |
+| econ.TH | Theoretical economics |
+| cs.CY | Computers & society (policy/AI governance) |
+| stat.AP | Applied statistics (empirical methods) |
 
-Access 35+ million biomedical literature citations.
+---
+
+# 2. Zotero Integration (Primary Literature Source)
+
+Zotero should be your main repository for:
+
+- Peer-reviewed journal articles  
+- Books and book chapters  
+- China-focused political economy studies  
+- Law & economics literature  
+- Annotated and curated references  
+
+---
+
+## 2.1 Zotero-MCP (Recommended)
+
+**Repository:** https://github.com/54yyyu/zotero-mcp
 
 ### Configuration
 
 ```json
 {
   "mcpServers": {
-    "pubmedmcp": {
+    "zotero": {
       "command": "uvx",
-      "args": ["pubmedmcp@latest"],
-      "env": {
-        "UV_PRERELEASE": "allow",
-        "UV_PYTHON": "3.12"
-      }
+      "args": ["zotero-mcp"]
     }
   }
 }
 ```
 
-### Search Tips
+---
 
-- Use MeSH terms for precise medical searches
-- Combine with publication type filters (Review, Clinical Trial)
-- Filter by date for recent literature
+## 2.2 Available Tools
 
-### Example MeSH Queries
-
-- `"Deep Learning"[MeSH] AND "Coronary Vessels"[MeSH]`
-- `"Image Processing, Computer-Assisted"[MeSH] AND "Tomography, X-Ray Computed"[MeSH]`
+| Tool | Purpose |
+|------|---------|
+| `zotero_search_items` | Search library by keywords |
+| `zotero_get_item_fulltext` | Retrieve full text |
+| `zotero_get_annotations` | Access highlights & notes |
 
 ---
 
-## Zotero Integration
+## 2.3 Recommended Zotero Collection Structure
 
-Access local Zotero database via API or Zotero-MCP.
+Organize your library by mechanisms and theory:
 
-### Direct API Access
-
-```bash
-# List collections
-curl -s "http://localhost:23119/api/users/[USER_ID]/collections"
-
-# Get items from collection
-curl -s "http://localhost:23119/api/users/[USER_ID]/collections/[KEY]/items"
+```
+📁 Institutional Economics Theory
+📁 Legislative Decentralization
+📁 Judicial Protection & Local Bias
+📁 Regulatory Enforcement
+📁 Market Integration
+📁 Market Segmentation
+📁 China Political Economy
+📁 Empirical Methods (DID, spatial econometrics)
 ```
 
-### Zotero-MCP (Recommended)
-
-**Repository:** https://github.com/54yyyu/zotero-mcp
-
-Provides structured access to:
-- `zotero_search_items` - Search by keywords
-- `zotero_get_item_fulltext` - Get full paper text
-- `zotero_get_annotations` - Get user highlights/notes
-
-### Extractable Fields
-
-- title, abstractNote, date
-- creators, publicationTitle
-- DOI, tags, collections
-
 ---
 
-## Source Selection Guide
+# 3. Source Selection Guide
 
 | Source | Best For | Strengths |
 |--------|----------|-----------|
-| **ArXiv** | Latest methods, DL advances | Preprints, fast access, CS/AI focus |
-| **PubMed** | Clinical validation, medical context | Peer-reviewed, MeSH indexing |
-| **Zotero** | Organized collections, existing library | Local management, annotations |
+| **Zotero** | Core references, peer-reviewed studies | Organized, annotated, stable |
+| **ArXiv** | Latest working papers & emerging research | Early access, innovative ideas |
+
+---
+
+# 4. Recommended Workflow
+
+## Step 1 — Zotero First (Core Literature)
+
+Search foundational and peer-reviewed studies.
+
+### Example
+
+```
+zotero_search_items: "local protectionism China"
+zotero_search_items: "judicial independence economic growth"
+```
+
+Use Zotero for:
+- Theory building
+- Empirical evidence
+- Citation backbone
+
+---
+
+## Step 2 — ArXiv Second (Recent Developments)
+
+Find new working papers and research trends.
+
+### Example
+
+```
+search_papers: "market integration regional inequality"
+search_papers: "regulatory enforcement firm performance"
+```
+
+Use ArXiv for:
+- New empirical strategies
+- Emerging debates
+- Working papers not yet published
+
+---
+
+## Step 3 — Synthesis
+
+Combine both sources:
+
+- Zotero → theoretical foundation & validated evidence  
+- ArXiv → latest developments & emerging insights  
+
+---
+
+# 5. Notes
+
+- PubMed removed (biomedical focus not relevant)  
+- MeSH strategies removed  
+- Queries optimized for economics & public policy research  
+- Designed for hypothesis-driven literature reviews  
+
+---
+
+# 6. Optional Future Extensions
+
+If needed, consider adding:
+
+- SSRN (economics & law working papers)
+- RePEc / IDEAS (economics literature)
+- World Bank Open Knowledge Repository
+
+These are optional — Zotero + ArXiv are sufficient for most research.
