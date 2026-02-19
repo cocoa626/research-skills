@@ -1,166 +1,177 @@
-# 7-Phase Literature Review Workflow
+# Theory Mechanism Development Workflow
+## (Four-Hypothesis Framework)
 
-## Phase 1: Project Initialization
+This workflow supports building a literature-based theoretical mechanism
+with four hypotheses on legislative decentralization and market integration.
 
-Create project structure:
-```
-project_root/
-├── CLAUDE.md              # Writing guidelines
-├── IMPLEMENTATION_PLAN.md # Staged plan
-├── manuscript_draft.md    # Main manuscript
-└── figures/               # Figure placeholders
-```
+It replaces technical review workflows with a streamlined process
+for theory-driven research in economics and public policy.
 
-**Actions:**
-1. Create `CLAUDE.md` from template (see TEMPLATES.md)
-2. Create `IMPLEMENTATION_PLAN.md` with stages
-3. Initialize empty `manuscript_draft.md`
+---
 
-## Phase 2: Literature Collection
+# Phase 1: Topic & Concept Clarification
 
-### Data Sources
+## Goal
+Define core concepts and research scope.
 
-#### 1. ArXiv MCP (Latest Deep Learning Methods)
+## Actions
 
-Best for: Cutting-edge architectures, preprints, AI/ML advances
+1. Define key concepts:
+   - Legislative decentralization
+   - Institutional heterogeneity
+   - Judicial local protection
+   - Regulatory enforcement
+   - Market integration vs segmentation
 
-**Search Strategy:**
-```
-Query: "[topic] AND (segmentation OR detection OR classification)"
-Categories: cs.CV, eess.IV, cs.LG
-Date: Last 2-3 years for recent methods
-Max results: 50-100 per query
-```
+2. Clarify research scope:
+   - Geographic focus (e.g., China)
+   - Level of analysis (firm-level, regional)
+   - Institutional context
 
-**Workflow:**
-1. Use `search_papers` with topic keywords
-2. Review titles and abstracts for relevance
-3. Use `download_paper` for key papers
-4. Use `read_paper` to extract method details
+3. Draft research question:
+   - How does legislative decentralization affect market integration?
 
-**Example Queries:**
-- "medical image segmentation transformer"
-- "coronary artery deep learning"
-- "CT scan neural network"
+---
 
-#### 2. PubMed MCP (Clinical & Biomedical Literature)
+# Phase 2: Literature Collection
 
-Best for: Clinical validation, medical context, peer-reviewed studies
+## Goal
+Build a focused literature base for theoretical mechanisms.
 
-**Search Strategy:**
-- Use MeSH terms for precise results
-- Filter by publication type (Review, Clinical Study)
-- Focus on clinical outcomes and validation
+## Data Sources
 
-**Example MeSH Queries:**
-- "Deep Learning"[MeSH] AND "Coronary Vessels"[MeSH]
-- "Image Processing, Computer-Assisted"[MeSH] AND "Tomography, X-Ray Computed"[MeSH]
+### 1. Zotero (Primary Source)
 
-#### 3. Zotero (Existing Library & Organization)
+Search and organize literature by mechanisms.
 
-Best for: Managing collected references, existing collections
+**Suggested Queries**
+- "legislative decentralization"
+- "local protectionism China"
+- "judicial independence economic outcomes"
+- "regulatory enforcement firm behavior"
+- "market integration domestic trade"
 
-**Workflow:**
-1. Connect to Zotero API or use Zotero-MCP
-2. Browse existing collections by topic
-3. Export metadata for citation management
+**Actions**
+- Categorize literature by mechanism (H1–H4)
+- Identify seminal works
+- Note conflicting findings
 
-### Collection Workflow
+---
 
-**Actions:**
-1. **ArXiv search** - Latest methods and architectures (50-100 papers)
-2. **PubMed search** - Clinical validation studies (30-50 papers)
-3. **Zotero check** - Existing relevant collections
-4. **WebSearch** - Supplementary sources (IEEE, Springer, Google Scholar)
-5. **Categorize** papers by method/application
-6. Create literature matrix:
+### 2. ArXiv (Supplementary Working Papers)
 
-| Category | Subcategory | Key Papers | Count | Source |
-|----------|-------------|------------|-------|--------|
-| Methods  | CNN/U-Net   | [refs]     | N     | ArXiv  |
-| Methods  | Transformer | [refs]     | N     | ArXiv  |
-| Clinical | Validation  | [refs]     | N     | PubMed |
-| Datasets | Public      | [refs]     | N     | Mixed  |
+Use for recent developments and empirical strategies.
 
-7. **Gap analysis** - Identify missing topics or time periods
-8. **Targeted search** - Fill gaps with additional queries
+**Suggested Queries**
+- "fiscal decentralization governance"
+- "institutional distance firm investment"
+- "regulatory enforcement economic outcomes"
 
-## Phase 3: Outline Development
+**Actions**
+- Identify emerging debates
+- Extract empirical strategies
+- Note policy implications
 
-**Actions:**
-1. Define section headings based on literature categories
-2. Map papers to sections
-3. Plan comparison tables
-4. Design figure placeholders
+---
 
-**Output:** Detailed outline in IMPLEMENTATION_PLAN.md
+# Phase 3: Mechanism Identification
 
-## Phase 4: Section Writing
+## Goal
+Identify causal pathways linking decentralization to market outcomes.
 
-For each major section:
+## Actions
 
-1. **Write introduction** (1-2 paragraphs on motivation)
-2. **Describe methods** using standard template
-3. **Add performance data** with consistent metrics
-4. **Write limitations** paragraph
-5. **Create comparison table**
-6. **Update references**
+1. Extract mechanisms from literature:
+   - Cost effect
+   - Judicial protection
+   - Regulatory risk
+   - Market segmentation
 
-**Progress tracking:** Use TodoWrite for each section
+2. Map causal chains:
+   Institutional change → Firm behavior → Market outcome
 
-## Phase 5: Tables and Figures
+3. Compare competing explanations.
 
-**Required tables:**
-- Table 1: Public Datasets
-- Table 2: Method Comparison
-- Table 3: Commercial Products (if applicable)
+---
 
-**Figure placeholders:**
-- Figure 1: Review overview/taxonomy
-- Figure 2: Method evolution timeline
-- Figure 3: Representative architectures
-- Figure 4: Clinical workflow
+# Phase 4: Hypothesis Development
 
-## Phase 6: Quality Assurance
+## Goal
+Translate mechanisms into testable hypotheses.
 
-**Structure check:**
-- [ ] Key Points present
-- [ ] All sections have summary tables
-- [ ] Consistent heading hierarchy
+## Actions
 
-**Content check:**
-- [ ] All major methods covered
-- [ ] Limitations discussed
-- [ ] Future directions articulated
+For each mechanism:
 
-**Language check:**
-- [ ] Hedging language used
-- [ ] Terminology consistent
-- [ ] Transitions smooth
+1. Define concept
+2. Explain causal logic
+3. Summarize supporting literature
+4. State testable hypothesis
 
-**Reference check:**
-- [ ] 80-120 references
-- [ ] Recent literature included
-- [ ] Organized by topic
+---
 
-## Phase 7: Incremental Updates
+# Phase 5: Mechanism Integration
 
-When new literature becomes available:
+## Goal
+Synthesize mechanisms into a coherent theoretical framework.
 
-1. **Categorize** new papers
-2. **Update CLAUDE.md** reference sources
-3. **Update IMPLEMENTATION_PLAN.md** with new stage
-4. **Identify insertion points** in manuscript
-5. **Update sections** with new methods
-6. **Add new sections** if new paradigm emerges
-7. **Update tables** with new data
-8. **Expand references**
+## Actions
 
-**Version control:**
-```markdown
-## Change Log
-### [Date] - v1.1
-- Added Section 3.X [New Category]
-- Updated Table 2 with N new methods
-- Added references #XX-#YY
-```
+1. Explain how mechanisms interact:
+   - Cost ↑
+   - Judicial bias ↑
+   - Regulatory risk ↑
+   → Cross-regional investment ↓
+
+2. Show combined impact on market segmentation.
+
+3. Draft integrated framework narrative.
+
+---
+
+# Phase 6: Empirical Readiness (Optional)
+
+## Goal
+Ensure hypotheses are testable.
+
+## Actions
+
+- Identify measurable variables
+- Suggest data sources
+- Consider identification strategies (e.g., DID)
+- Note potential endogeneity issues
+
+---
+
+# Phase 7: Refinement & Quality Check
+
+## Goal
+Ensure theoretical rigor and clarity.
+
+## Checklist
+
+### Conceptual Clarity
+- [ ] Concepts clearly defined
+- [ ] Mechanisms logically consistent
+- [ ] Assumptions stated
+
+### Literature Support
+- [ ] Each mechanism supported by literature
+- [ ] Foundational theories cited
+- [ ] Conflicting findings acknowledged
+
+### Hypotheses Quality
+- [ ] Testable
+- [ ] Direction specified
+- [ ] Mechanism explained
+
+---
+
+# Output
+
+The workflow produces:
+
+- A structured theoretical mechanism section
+- Four testable hypotheses
+- Literature-grounded causal logic
+- A coherent framework linking decentralization to market segmentation
