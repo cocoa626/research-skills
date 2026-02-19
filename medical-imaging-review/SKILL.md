@@ -1,14 +1,13 @@
 ---
-name: theory-review-expander
+name: theory-mechanism-expander
 description: >
-  Expand and refine theoretical literature reviews in economics, law, and public policy.
-  Use when writing or expanding theory sections, research hypotheses, or literature reviews
-  on topics such as decentralization, institutional differences, judicial protection,
-  regulatory governance, and market integration.
+  Expand and refine literature-based theoretical mechanisms and hypotheses
+  in economics, law, and public policy. Designed for developing four-mechanism
+  frameworks linking institutional change to firm behavior and market outcomes.
 
 metadata:
   author: user
-  version: "1.0.0"
+  version: "2.0.0"
 
 allowed-tools:
   - Read
@@ -20,9 +19,17 @@ allowed-tools:
   - WebFetch
 ---
 
-# Theoretical Literature Review Expansion Skill
+# Theory Mechanism Expansion Skill
 
-Expand short theory drafts into publishable academic literature reviews.
+Expand short drafts into rigorous, literature-grounded theoretical mechanisms
+with testable hypotheses.
+
+This skill is optimized for research on:
+- Legislative decentralization
+- Institutional heterogeneity
+- Judicial local protection
+- Regulatory enforcement
+- Market integration and segmentation
 
 ---
 
@@ -30,11 +37,11 @@ Expand short theory drafts into publishable academic literature reviews.
 
 This skill helps you:
 
-- Expand theory sections into full literature reviews
-- Add authoritative citations and theoretical grounding
-- Clarify causal mechanisms
+- Expand brief ideas into full theoretical mechanisms
+- Clarify causal pathways (institution → firm → market)
+- Integrate supporting literature
 - Formulate testable hypotheses
-- Improve academic tone and structure
+- Ensure academic rigor and coherence
 
 ---
 
@@ -46,77 +53,81 @@ This skill helps you:
 - Emphasize causal logic
 - Maintain formal academic tone
 
-### Required Elements
+### Required Elements per Mechanism
+
 Each mechanism must include:
-- Concept definition
-- Theoretical foundation
-- Causal pathway
-- Supporting literature
-- Testable hypothesis
+
+1. Concept definition  
+2. Theoretical logic (causal chain)  
+3. Literature support  
+4. Behavioral implications  
+5. Testable hypothesis  
 
 ---
 
-## Standard Structure for Theory Expansion
+## Standard Output Structure
+
+The skill produces a four-mechanism framework:
 
 ```markdown
-## 1. Conceptual Background
-- Define core concepts
-- Clarify institutional context
+# Theoretical Mechanisms and Research Hypotheses
 
-## 2. Theoretical Foundations
-- Transaction cost theory
-- Institutional economics
-- Law and economics
-- Political economy of decentralization
+## H1 Cost Effect
+## H2 Judicial Protection Effect
+## H3 Regulatory Risk Effect
+## H4 Market Segmentation Effect
+```
 
-## 3. Mechanisms
-### 3.1 Cost Effect
-### 3.2 Judicial Protection Effect
-### 3.3 Regulatory Risk Effect
+---
 
-## 4. Research Hypotheses
-H1:
-H2:
-H3:
-H4:
+## Mechanism Expansion Template
 
-## 5. Implications for Market Integration
+```markdown
+## H#: [Mechanism Name]
 
+### Concept
+Define the mechanism and key constructs.
 
-### [Mechanism Name]
-
-**Concept:** Define the mechanism.
-
-**Theoretical Logic:**  
-Explain causal chain:
+### Theoretical Logic
 Institutional change → Firm behavior → Market outcome
 
-**Literature Support:**  
-Summarize key studies and their relevance.
+### Literature Basis
+Summarize relevant theoretical and empirical studies.
 
-**Implications:**  
-Explain expected behavioral changes.
+### Implications
+Explain expected changes in firm behavior.
 
-**Hypothesis:**  
-H#: [Testable statement]
+### Hypothesis
+State a clear, testable hypothesis.
+```
 
 ---
 
-## Citation Patterns
+## Citation Guidance
+
+Use citations to support theoretical claims:
 
 ```markdown
-# Data citation
-"...achieved Dice of 0.89 [23]"
+# Theory citation
+"Transaction cost theory suggests that institutional differences increase compliance costs [Author, Year]."
 
-# Method citation
-"Gu et al. [45] proposed..."
+# Empirical citation
+"Empirical studies find that local firms often enjoy higher litigation success rates [Author, Year]."
 
-# Multi-citation
-"Several studies demonstrated... [12, 15, 23]"
-
-# Comparative
-"While [12] focused on..., [15] addressed..."
+# Comparative citation
+"While some studies emphasize regulatory efficiency, others highlight enforcement disparities [Author, Year; Author, Year]."
 ```
+
+---
+
+## Integration Guidance
+
+When expanding multiple mechanisms:
+
+- Ensure mechanisms are logically consistent
+- Explain how mechanisms interact
+- Show cumulative effects on market integration
+- Avoid redundant explanations across hypotheses
 
 ---
 
@@ -124,8 +135,26 @@ H#: [Testable statement]
 
 | File | Purpose |
 |------|---------|
-| [references/WORKFLOW.md](references/WORKFLOW.md) | Detailed 7-phase workflow |
-| [references/TEMPLATES.md](references/TEMPLATES.md) | CLAUDE.md and IMPLEMENTATION_PLAN.md templates |
-| [references/DOMAINS.md](references/DOMAINS.md) | Domain-specific method categories |
-| [references/MCP_SETUP.md](references/MCP_SETUP.md) | MCP server configuration |
-| [references/QUALITY_CHECKLIST.md](references/QUALITY_CHECKLIST.md) | Pre-submission quality checklist |
+| references/WORKFLOW.md | Theory mechanism development workflow |
+| references/DOMAINS.md | Four-hypothesis framework |
+| references/MCP_SETUP.md | Literature sources configuration |
+| references/THEORY_MECHANISM_CHECKLIST.md | Quality control checklist |
+
+---
+
+## When to Use This Skill
+
+Use this skill when you need to:
+
+- Expand theoretical mechanisms from notes
+- Develop literature-based hypotheses
+- Clarify causal pathways in institutional research
+- Strengthen theory sections for empirical papers
+
+---
+
+## Output Goal
+
+Produce a concise, literature-grounded theoretical framework
+with four mechanisms and testable hypotheses suitable for
+inclusion in an academic paper.
