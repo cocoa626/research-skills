@@ -1,49 +1,40 @@
-# Quality Checklist for Theory-Driven Literature Reviews
-## (Institutional Economics, Law & Economics, Political Economy)
+# Quality Checklist for Theory Mechanism Development
+## (Four-Hypothesis Framework)
 
-This checklist ensures academic rigor for theory sections and literature reviews
-focused on legislative decentralization, institutional differences,
-judicial protection, and market integration.
+This checklist ensures rigor and clarity when developing
+literature-based theoretical mechanisms and hypotheses.
+
+Applicable to research on legislative decentralization,
+institutional differences, judicial protection, and market integration.
 
 ---
 
 # Pre-Submission Checklist
 
-## 1. Structure
+## 1. Conceptual Clarity
 
-- [ ] Clear theoretical framework presented
-- [ ] Mechanisms organized logically (e.g., H1–H4)
-- [ ] Consistent heading hierarchy (max 3 levels)
-- [ ] Abstract clearly states research question and contributions
-- [ ] Hypotheses explicitly stated and numbered
-- [ ] Section transitions clearly explain logical flow
-
----
-
-## 2. Conceptual Clarity
-
-- [ ] Core concepts defined:
-  - Institutional heterogeneity
+- [ ] Core concepts clearly defined:
   - Legislative decentralization
+  - Institutional heterogeneity
   - Judicial local protection
   - Regulatory enforcement intensity
   - Market integration vs segmentation
-- [ ] Distinction between similar concepts clarified
-- [ ] Theoretical scope and boundary conditions specified
+- [ ] Distinctions between related concepts clarified
+- [ ] Scope and boundary conditions specified
 
 ---
 
-## 3. Theoretical Logic
+## 2. Theoretical Logic
 
-- [ ] Clear causal chains:
-  - Institutional change → Firm behavior → Market outcomes
+- [ ] Clear causal chain:
+  Institutional change → Firm behavior → Market outcomes
 - [ ] Mechanisms explained step-by-step
 - [ ] Assumptions stated explicitly
 - [ ] Alternative explanations acknowledged
 
 ---
 
-## 4. Literature Coverage
+## 3. Literature Support
 
 - [ ] Foundational theories cited:
   - Transaction cost economics
@@ -51,19 +42,43 @@ judicial protection, and market integration.
   - Law & economics
   - Political economy of decentralization
 - [ ] Key empirical studies included
-- [ ] China-specific literature covered (if applicable)
-- [ ] Both classic and recent studies included
-- [ ] Literature synthesized, not merely listed
+- [ ] Both classic and recent studies referenced
+- [ ] Literature synthesized (not listed)
+- [ ] Conflicting findings acknowledged
 
 ---
 
-## 5. Hypotheses Quality
+## 4. Hypothesis Quality
 
 - [ ] Hypotheses are testable
 - [ ] Direction of effect clearly stated
 - [ ] Mechanism linking variables explained
-- [ ] Hypotheses aligned with theory
+- [ ] Hypotheses derived logically from theory
 - [ ] No tautological or non-falsifiable claims
+
+---
+
+## 5. Mechanism-Specific Checks
+
+### H1 Cost Effect
+- [ ] Compliance and information costs defined
+- [ ] Link to transaction cost theory established
+- [ ] Impact on cross-regional investment explained
+
+### H2 Judicial Protection Effect
+- [ ] Local bias mechanism explained
+- [ ] Judicial incentives discussed
+- [ ] Enforcement disparities addressed
+
+### H3 Regulatory Risk Effect
+- [ ] Enforcement intensity mechanism clarified
+- [ ] Litigation risk logic explained
+- [ ] Government incentives considered
+
+### H4 Market Segmentation Effect
+- [ ] Capital mobility mechanism explained
+- [ ] Market integration indicators discussed
+- [ ] Combined mechanism logic synthesized
 
 ---
 
@@ -77,119 +92,35 @@ judicial protection, and market integration.
   - ❌ "definitely"
 - [ ] Formal academic tone maintained
 - [ ] Terminology consistent throughout
-- [ ] Smooth transitions between paragraphs
+- [ ] Smooth transitions between mechanisms
 
 ---
 
-## 7. Evidence & Citation
+## 7. Logical Integration
 
-- [ ] All claims supported by citations
-- [ ] Seminal works included
-- [ ] Recent literature incorporated
-- [ ] Citations used analytically (not name-dropping)
-- [ ] Competing viewpoints acknowledged
-
----
-
-## 8. Mechanism-Specific Checks
-
-### H1 Cost Effect
-- [ ] Compliance costs clearly defined
-- [ ] Link to transaction cost theory established
-- [ ] Cross-regional investment implications explained
-
-### H2 Judicial Protection Effect
-- [ ] Local bias mechanism explained
-- [ ] Judicial incentives discussed
-- [ ] Legal enforcement disparities addressed
-
-### H3 Regulatory Risk Effect
-- [ ] Enforcement intensity mechanism clarified
-- [ ] Litigation risk logic explained
-- [ ] Government incentives considered
-
-### H4 Market Segmentation Effect
-- [ ] Capital mobility mechanism explained
-- [ ] Market integration indicators discussed
-- [ ] Combined mechanism logic clearly synthesized
+- [ ] Mechanisms are internally consistent
+- [ ] No contradictions across hypotheses
+- [ ] Interactions between mechanisms explained
+- [ ] Overall framework forms a coherent narrative
 
 ---
 
-## 9. Empirical Readiness
+## 8. Empirical Readiness (Optional but Recommended)
 
-- [ ] Variables suggested for each hypothesis
-- [ ] Measurement strategies discussed
-- [ ] Data sources identified
-- [ ] Identification strategy outlined (e.g., DID)
+- [ ] Variables implied or defined
+- [ ] Measurement strategies suggested
+- [ ] Data sources identifiable
 - [ ] Potential endogeneity issues acknowledged
 
 ---
 
-## 10. Tables & Figures (Optional but Recommended)
+# Final Output Check
 
-### Suggested Tables
-- [ ] Table: Mechanisms and Hypotheses Overview
-- [ ] Table: Variables and Measurement
-- [ ] Table: Literature Summary by Mechanism
+The theory section should:
 
-### Suggested Figures
-- [ ] Figure: Theoretical Framework Diagram
-- [ ] Figure: Causal Pathways (Institution → Firm → Market)
-- [ ] Figure: Moderating Factors (optional)
-
----
-
-# Per-Section Checklist
-
-## Introduction
-
-- [ ] Research problem clearly stated
-- [ ] Policy relevance explained
-- [ ] Research gap identified
-- [ ] Contributions summarized
-
----
-
-## Theoretical Framework
-
-- [ ] Concepts defined before use
-- [ ] Mechanisms logically ordered
-- [ ] Hypotheses derived from theory
-- [ ] Competing theories acknowledged
-
----
-
-## Literature Review
-
-- [ ] Organized by mechanism or theory
-- [ ] Critical synthesis provided
-- [ ] Contradictory findings discussed
-- [ ] Research gaps identified
-
----
-
-## Hypotheses Section
-
-- [ ] Each hypothesis follows theory
-- [ ] Direction and mechanism stated
-- [ ] Variables implied or defined
-- [ ] Testability ensured
-
----
-
-## Discussion (if included)
-
-- [ ] Broader implications discussed
-- [ ] Policy relevance considered
-- [ ] Limitations acknowledged
-- [ ] Future research directions proposed
-
----
-
-## Conclusion
-
-- [ ] Key theoretical insights summarized
-- [ ] Contributions restated
-- [ ] Implications for market integration highlighted
-- [ ] Future research avenues suggested
+- [ ] Present four clearly defined mechanisms
+- [ ] Provide literature-grounded causal logic
+- [ ] State four testable hypotheses
+- [ ] Explain how mechanisms jointly affect market integration
+- [ ] Maintain academic rigor and clarity
 
